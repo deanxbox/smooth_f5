@@ -4,13 +4,17 @@
 /build/
 /common/.gradle/
 /common/build/
+/common/bin/
 /common/run/
 /fabric/.gradle/
 /fabric/build/
+/fabric/bin/
 /fabric/run/
 /forge/.gradle/
 /forge/build/
+/forge/bin/
 /forge/run/
 /neoforge/.gradle/
 /neoforge/build/
+/neoforge/bin/
 /neoforge/run/
