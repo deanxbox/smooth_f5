@@ -79,8 +79,8 @@ public abstract class CameraMixin {
         smooth_f5$wasMirrored = mirror;
     }
 
-    @Inject(method = "alignWithEntity", at = @At("TAIL"))
-    private void onAlignWithEntityTail(float partialTicks, CallbackInfo ci) {
+    @Inject(method = "update", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Camera;alignWithEntity(F)V", shift = At.Shift.AFTER))
+    private void onAlignWithEntityTail(DeltaTracker deltaTracker, CallbackInfo ci) {
         SmoothingMode mode = ConfigPlatform.getSmoothingMode();
         if (mode == SmoothingMode.NEVER) return;
 
