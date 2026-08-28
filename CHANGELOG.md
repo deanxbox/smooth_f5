@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.3.2
+
+### Fixed
+- fix camera bouncing when also using "Countered's Smooth F5" (Thanks to deanxbox!)
+
+***
+
 ## v1.3.1
 
 ### Fixed
